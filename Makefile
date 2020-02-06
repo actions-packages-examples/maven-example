@@ -1,9 +1,5 @@
 default:
-	make package
-	make build
+	make verify
 
-package:
-	mvn package
-
-build:
-	java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+verify:
+	mvn verify 
