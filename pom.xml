@@ -13,7 +13,7 @@
   
   <distributionManagement>
     <repository>
-      <id>github</id>
+      <id>foobarbaz</id>
       <name>GitHub actions-packages-examples Apache Maven Packages</name>
       <url>https://token:${token}@maven.pkg.github.com/actions-packages-examples/maven-example</url>
     </repository>
