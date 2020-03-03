@@ -4,14 +4,21 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.mycompany.app</groupId>
+  <groupId>com.mycompany.app</groupId> <!-- package name -->
   <artifactId>my-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
-
+  <version>1.0-SNAPSHOT</version> <!-- package version -->  
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
-
+  
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub actions-packages-examples Apache Maven Packages</name>
+      <url>https://token:${token}@maven.pkg.github.com/actions-packages-examples/maven-example</url>
+    </repository>
+  </distributionManagement>
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
