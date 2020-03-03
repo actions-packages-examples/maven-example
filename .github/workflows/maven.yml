@@ -18,7 +18,9 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
+      shell: bash
       run: mvn package
     - name: Deploy package
+      shell: bash
       run: mvn deploy -Dtoken=${{ secrets.GITHUB_TOKEN }}
       
