@@ -1,2 +1,3 @@
-# ape-template
+# Maven example
+
 Repository template for actions-packages-examples.
