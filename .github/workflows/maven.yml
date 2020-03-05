@@ -22,7 +22,7 @@ jobs:
       run: mvn package
     - name: Deploy package
       shell: bash
-      run: mvn deploy -Dtoken=${{ secrets.GITHUB_TOKEN }}
+      run: mvn -X deploy -Dtoken=${{ secrets.GITHUB_TOKEN }}
 
   build-with-default-shell:
     strategy:
@@ -42,5 +42,5 @@ jobs:
       shell: bash
       run: mvn package
     - name: Deploy package
-      run: mvn deploy -Dtoken=${{ secrets.GITHUB_TOKEN }}
+      run: mvn -X deploy -Dtoken=${{ secrets.GITHUB_TOKEN }}
       
