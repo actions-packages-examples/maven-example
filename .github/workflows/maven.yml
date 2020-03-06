@@ -3,7 +3,7 @@ name: Java CI
 on: [push]
 
 jobs:
-  build-with-bash:
+  build:
     strategy:
       matrix:
         os: [ubuntu-latest]
