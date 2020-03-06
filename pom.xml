@@ -15,7 +15,7 @@
     <repository>
       <id>maven-example</id>
       <name>GitHub actions-packages-examples Apache Maven Packages</name>
-      <url>https://token:${token}@maven.pkg.github.com/actions-packages-examples/maven-example</url>
+      <url>https://token:${token}@maven.pkg.github.com/ACTIONS-PACKAGES-EXAMPLES/MAVEN-EXAMPLE</url>
     </repository>
   </distributionManagement>
   
