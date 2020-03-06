@@ -6,7 +6,7 @@ jobs:
   build-with-bash:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
       fail-fast: false
 
     runs-on: ${{ matrix.os }}
@@ -23,10 +23,4 @@ jobs:
     - name: Deploy package
       shell: bash
       run: |
-        n=0
-        until [ $n -ge 5]
-        do
-          mvn -X deploy -Dtoken=${{ secrets.GITHUB_TOKEN }} && break
-          n=$[$n+1]
-          sleep 15
-        done
+        mvn -X deploy -Dtoken=${{ secrets.GITHUB_TOKEN }}
